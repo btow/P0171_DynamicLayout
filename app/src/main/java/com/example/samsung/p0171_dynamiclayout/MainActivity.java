@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this, "All views is cleared", Toast.LENGTH_SHORT).show();
                 break;
             default :
-                Button button =  (Button) llMain.getChildAt(viewId);
+                Button button =  (Button) v;
                 button.setText(button.getText().toString() + " " + viewId);
                 break;
         }
